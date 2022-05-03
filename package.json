@@ -4,7 +4,8 @@
     "prod": "npm run build && npm run server:prod",
     "build": "vite build && vite build --ssr",
     "server": "ts-node ./server",
-    "server:prod": "cross-env NODE_ENV=production ts-node ./server"
+    "server:prod": "cross-env NODE_ENV=production ts-node ./server",
+    "format": "npx prettier -w ."
   },
   "dependencies": {
     "@types/compression": "^1.7.2",
@@ -21,5 +22,8 @@
     "vite": "^2.8.4",
     "vite-plugin-ssr": "^0.3.64",
     "vue": "^3.2.31"
+  },
+  "devDependencies": {
+    "prettier": "2.6.2"
   }
 }
